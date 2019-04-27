@@ -1,8 +1,8 @@
-#zuul.ignored-services: "*"
-#zuul.prefix:  /api
-#zuul.routes.organizationservice: /organizationservice/**
+zuul.ignored-services: "*"
+zuul.prefix:  /api
+zuul.routes.organizationservice: /organization/**
 #zuul.routes.licensingservice: /licensing/**
-#zuul.routes.assetsservice: /assetsservice/**
+zuul.routes.assetsservice: /assets/**
 #zuul.routes.authenticationservice: /auth/**
 #zuul.routes.specialroutesservice: /specialroutesservice/**
 #zuul.routes.configserver: /configserver/**
