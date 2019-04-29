@@ -5,7 +5,7 @@ zuul.routes.organizationservice: /organization/**
 zuul.routes.assetsservice: /assets/**
 #zuul.routes.authenticationservice: /auth/**
 #zuul.routes.specialroutesservice: /specialroutesservice/**
-#zuul.routes.configserver: /configserver/**
+zuul.routes.configserver: /configserver/**
 #zuul.routes.licensestatic.path: /licensestatic/**
 #zuul.routes.licensestatic.url:  http://licenseservice-static:8081
 #zuul.routes.licensestatic.serviceId: licensestatic
@@ -13,9 +13,9 @@ zuul.routes.assetsservice: /assets/**
 #ribbon.eureka.enabled: false
 zuul.sensitiveHeaders: Cookie,Set-Cookie
 zuul.debug.request: true
-#hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2500
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 10000
 #hystrix.command.licensingservice.execution.isolation.thread.timeoutInMilliseconds: 2
-hystrix.command.default.execution.timeout.enabled: false
+#hystrix.command.default.execution.timeout.enabled: false
 #licensingservice.ribbon.ReadTimeout: 2
 signing.key: "345345fsdfsf5345"
-zuul.ribbon.eager-load.enabled: true
+#zuul.ribbon.eager-load.enabled: true
